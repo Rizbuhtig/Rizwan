@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 68.074 s <<< FAILURE! - in TestSuite
+FrameworkScratch.EndtoEnd.Homepage.basepagenavigation[test@email.com, abcdes, Restricted data](1)  Time elapsed: 0.646 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Runtime.executionContextCreated has invalid 'context': {"auxData":{"frameId":"907976AC5F2207126CE5A362B7731C23","isDefault":true,"type":"default"},"id":1,"name":"","origin":"://","uniqueId":"2660326059081518039.1146937319007273236"}
+  (Session info: chrome=96.0.4664.45)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NISHANTHT-W10', ip: '172.24.29.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc32851973f2ec7242d1b12617daa8d6, get {url=https://qaclickacademy.com}]
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {userDataDir: C:\Users\NISHAN~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: true, platform: XP, platformName: XP, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 96.0.4664.45, webStorageEnabled: true}
+Session ID: cc32851973f2ec7242d1b12617daa8d6
+	at FrameworkScratch.EndtoEnd.Homepage.basepagenavigation(Homepage.java:32)
+
+FrameworkScratch.EndtoEnd.Homepage.basepagenavigation[demo@email.com, password, Normal user](2)  Time elapsed: 31.489 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NISHANTHT-W10', ip: '172.24.29.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc32851973f2ec7242d1b12617daa8d6, get {url=https://qaclickacademy.com}]
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {userDataDir: C:\Users\NISHAN~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: true, platform: XP, platformName: XP, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 96.0.4664.45, webStorageEnabled: true}
+Session ID: cc32851973f2ec7242d1b12617daa8d6
+	at FrameworkScratch.EndtoEnd.Homepage.basepagenavigation(Homepage.java:32)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:49355
+	at FrameworkScratch.EndtoEnd.Homepage.basepagenavigation(Homepage.java:32)
+Caused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:49355
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:49355
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+FrameworkScratch.EndtoEnd.Homepage.tearDown  Time elapsed: 55.605 s  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NISHANTHT-W10', ip: '172.24.29.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc32851973f2ec7242d1b12617daa8d6, close {}]
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {userDataDir: C:\Users\NISHAN~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: true, platform: XP, platformName: XP, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 96.0.4664.45, webStorageEnabled: true}
+Session ID: cc32851973f2ec7242d1b12617daa8d6
+	at FrameworkScratch.EndtoEnd.Homepage.tearDown(Homepage.java:49)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:49355
+	at FrameworkScratch.EndtoEnd.Homepage.tearDown(Homepage.java:49)
+Caused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:49355
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:49355
+Caused by: java.net.ConnectException: Connection refused: no further information
+
+pageObjects.validateTitle.basepagenavigation  Time elapsed: 0 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Runtime.executionContextCreated has invalid 'context': {"auxData":{"frameId":"AD3E4EAB2E8ADFBEAF4541138C440757","isDefault":true,"type":"default"},"id":1,"name":"","origin":"://","uniqueId":"-2706646603468385836.7708037321442375053"}
+  (Session info: chrome=96.0.4664.45)
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'NISHANTHT-W10', ip: '172.24.29.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d9dd99f31c2fc1d95fc912835bb9560, get {url=http://qaclickacademy.com}]
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {userDataDir: C:\Users\NISHAN~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: true, platform: XP, platformName: XP, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 96.0.4664.45, webStorageEnabled: true}
+Session ID: 3d9dd99f31c2fc1d95fc912835bb9560
+	at pageObjects.validateTitle.basepagenavigation(validateTitle.java:34)
+

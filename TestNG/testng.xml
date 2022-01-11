@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="unitFramework">
+    <classes>
+      <class name="unitFramework.homeLoan"/>
+      <class name="unitFramework.executionDemo"/>
+      <class name="unitFramework.vehicle"/>
+    </classes>
+  </test> <!-- unitFramework -->
+</suite> <!-- Suite -->

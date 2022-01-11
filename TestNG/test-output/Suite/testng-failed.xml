@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="qa.itcoscontrol.com"/>
+  <listeners>
+    <listener class-name="unitFramework.listenDemo"/>
+  </listeners>
+  <test name="Demo(failed)">
+    <parameter name="APIKey" value="7412$55"/>
+    <classes>
+      <class name="unitFramework.homeLoan">
+        <methods>
+          <include name="APIHomeLoan"/>
+        </methods>
+      </class> <!-- unitFramework.homeLoan -->
+      <class name="unitFramework.executionDemo">
+        <methods>
+          <include name="CarService"/>
+          <include name="CarWebLoan"/>
+          <include name="CarInsurance"/>
+          <include name="CarCoupons"/>
+        </methods>
+      </class> <!-- unitFramework.executionDemo -->
+      <class name="unitFramework.vehicle">
+        <methods>
+          <include name="vehicleInsurance"/>
+          <include name="vehicleInsurance"/>
+        </methods>
+      </class> <!-- unitFramework.vehicle -->
+    </classes>
+  </test> <!-- Demo(failed) -->
+  <test name="VehicleDemo(failed)">
+    <parameter name="APIKey" value="7412$55"/>
+    <classes>
+      <class name="unitFramework.homeLoan">
+        <methods>
+          <include name="APIHomeLoan"/>
+        </methods>
+      </class> <!-- unitFramework.homeLoan -->
+      <class name="unitFramework.executionDemo">
+        <methods>
+          <include name="CarService"/>
+          <include name="CarWebLoan"/>
+          <include name="CarInsurance"/>
+          <include name="CarCoupons"/>
+        </methods>
+      </class> <!-- unitFramework.executionDemo -->
+      <class name="unitFramework.vehicle">
+        <methods>
+          <include name="vehicleInsurance"/>
+          <include name="vehicleInsurance"/>
+        </methods>
+      </class> <!-- unitFramework.vehicle -->
+    </classes>
+  </test> <!-- VehicleDemo(failed) -->
+</suite> <!-- Failed suite [Suite] -->

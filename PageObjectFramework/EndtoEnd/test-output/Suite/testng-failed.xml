@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test(failed)">
+    <classes>
+      <class name="pageObjects.validateTitle">
+        <methods>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+          <include name="basepagenavigation"/>
+        </methods>
+      </class> <!-- pageObjects.validateTitle -->
+      <class name="FrameworkScratch.EndtoEnd.Homepage">
+        <methods>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- FrameworkScratch.EndtoEnd.Homepage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

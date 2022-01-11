@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel ="tests" thread-count ="6" >
+
+
+<listeners>
+<listener class-name ="unitFramework.listenDemo"/>
+</listeners>
+ <parameter name="URL" value ="qa.itcoscontrol.com"/>
+  <test name="Demo">
+ 	<parameter name ="APIKey" value ="7412$55"/>
+    <classes>
+      <class name="unitFramework.annotationDemo"/>
+      <class name="unitFramework.homeLoan"/>
+      <class name="unitFramework.executionDemo"/>
+      	<class name="unitFramework.vehicle"/>
+      
+      
+    </classes>
+  </test> <!-- ParameterDemo -->
+  
+  <test name ="VehicleDemo">
+  <parameter name ="APIKey" value ="7412$55"/>
+  	<classes>
+  		<class name="unitFramework.vehicle"/>
+  	</classes>
+  </test>
+</suite> <!-- Suite -->

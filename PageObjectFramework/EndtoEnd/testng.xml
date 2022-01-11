@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Homepage">
+    <classes>
+      <class name="FrameworkScratch.EndtoEnd.Homepage"/>
+    </classes>
+  </test>
+  
+  <test name="ValidateTitle">
+    <classes>
+      <class name="pageObjects.validateTitle"/>
+    </classes>
+  </test>
+  
+ 
+  <test name ="AppTest">
+  	<classes>
+      <class name="FrameworkScratch.EndtoEnd.AppTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

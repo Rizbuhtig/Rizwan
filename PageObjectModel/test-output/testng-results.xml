@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-29T09:06:36Z" name="Default suite" finished-at="2021-10-29T09:07:27Z" duration-ms="51078">
+    <groups>
+    </groups>
+    <test started-at="2021-10-29T09:06:36Z" name="Default test" finished-at="2021-10-29T09:07:27Z" duration-ms="51078">
+      <class name="testcases.loginapplication">
+        <test-method signature="Login()[pri:0, instance:testcases.loginapplication@707194ba]" started-at="2021-10-29T14:36:36Z" name="Login" finished-at="2021-10-29T14:37:27Z" duration-ms="51032" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1565: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+
+Build info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:11:15'
+System info: host: 'nishantht-w10', ip: '172.24.29.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1565: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+
+Build info: version: '2.39.0', revision: 'ff23eac', time: '2013-12-16 16:11:15'
+System info: host: 'nishantht-w10', ip: '172.24.29.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:197)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at testcases.loginapplication.Login(loginapplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/AddonManager.jsm, line 1565: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- testcases.loginapplication -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

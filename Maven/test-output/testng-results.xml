@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-26T16:06:53Z" name="Default suite" finished-at="2021-10-26T16:06:53Z" duration-ms="48">
+    <groups>
+    </groups>
+    <test started-at="2021-10-26T16:06:53Z" name="Default test" finished-at="2021-10-26T16:06:53Z" duration-ms="48">
+      <class name="AutomationMaven.Maven.hospitalTest">
+        <test-method signature="Cafeteria()[pri:0, instance:AutomationMaven.Maven.hospitalTest@38102d01]" started-at="2021-10-26T21:36:53Z" name="Cafeteria" finished-at="2021-10-26T21:36:53Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cafeteria -->
+        <test-method signature="ICU()[pri:0, instance:AutomationMaven.Maven.hospitalTest@38102d01]" started-at="2021-10-26T21:36:53Z" name="ICU" finished-at="2021-10-26T21:36:53Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ICU -->
+        <test-method signature="outPatient()[pri:0, instance:AutomationMaven.Maven.hospitalTest@38102d01]" started-at="2021-10-26T21:36:53Z" name="outPatient" finished-at="2021-10-26T21:36:53Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outPatient -->
+        <test-method signature="pharmacy()[pri:0, instance:AutomationMaven.Maven.hospitalTest@38102d01]" started-at="2021-10-26T21:36:53Z" name="pharmacy" finished-at="2021-10-26T21:36:53Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pharmacy -->
+      </class> <!-- AutomationMaven.Maven.hospitalTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
